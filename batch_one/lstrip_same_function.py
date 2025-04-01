@@ -7,7 +7,7 @@
 sentence = "   No spaces here"
 if sentence.startswith(" "):
     space_checker = 0
-sentence = "    No spaces here"
+
 if sentence:
     while space_checker < len(sentence) and sentence[space_checker] == ' ':
         # this line checks if the space_checker is still in bounds of the sentence and if it is reading a space or not
