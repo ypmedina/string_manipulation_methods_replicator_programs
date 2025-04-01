@@ -5,8 +5,6 @@
 
 user_input = input("Please enter a word")
 user_prefix = input("What is the prefix used in the word? If none, please press enter")
-user_input = input("Please enter a word: ")
-user_prefix = input("What is the prefix used in the word? If none, please press enter: ")
 
 if user_prefix and user_input.startswith(user_prefix):
 
