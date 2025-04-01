@@ -4,13 +4,6 @@
 user_inp = input("Enter a sentence: ")
 find_index = input("Enter a word to find: ")
 
-user_index = -1
-for i in range(len(user_inp) - 1, -1, -1):
-    if user_inp[i:i+len(find_index)] == find_index:
-        user_index = i
-        break
+user_index = user_inp.rfind(find_index)
 
-if user_index != -1:
-    print(f"'{find_index}' is indexed at {user_index}.")
-else:
-    print(f"'{find_index}' not found in the string.")
+print(user_index)
