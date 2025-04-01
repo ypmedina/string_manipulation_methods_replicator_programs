@@ -5,4 +5,7 @@ user_inp = input("Please enter a word or sentence: ")
 user_fill = int(input("Please enter how many zeroes you want to fill the word/sentence with: "))
 zero = chr(48)
 
-print(((user_fill - len(user_inp)) * zero)  + user_inp)
+if len(user_inp) > user_fill:
+    print("The amount of characters exceeded the amount of zeroes, exiting now")
+else:
+    print(((user_fill - len(user_inp)) * zero)  + user_inp)

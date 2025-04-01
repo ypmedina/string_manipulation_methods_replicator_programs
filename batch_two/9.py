@@ -11,4 +11,4 @@ for i in user_input:
         count_list += 1
 
 
-print(count_list)
+print(f"{count_list} {user_count}'s were in the word/sentence")
